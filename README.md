@@ -14,6 +14,16 @@ The code is organized as a single script designed for transparency and reproduci
 
 ---
 
+## Data sources
+
+- **Spatial transcriptomics (Visium HD)**: GEO accession **GSE315639**  
+  https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE315639
+
+- **scRNA-seq reference for deconvolution (RCTD)**: GEO accession **GSE131907**  
+  (used as the single-cell transcriptomic reference dataset for RCTD)
+
+---
+
 ## Contents
 
 - `analysis_pipeline.R`  
@@ -31,25 +41,21 @@ The code is organized as a single script designed for transparency and reproduci
 
 ## Requirements
 
-### R / OS
-- R >= 4.2 is recommended (works with newer versions as well)
+### R
+- R >= 4.2 is recommended
 
 ### R packages
 The pipeline uses the following R packages:
-- `Seurat` (v5+)
-- `SeuratObject` (v5+)
+- `Seurat`
+- `SeuratObject` 
 - `harmony`
 - `spacexr`
 - `SpatialExperiment`, `SummarizedExperiment`
 - `arrow` (for reading `.parquet`)
 - `clusterProfiler`, `org.Hs.eg.db`
 
-Install packages (example):
+The specific version can be found in the sessionInfo.txt file.
 
-```r
-install.packages(c("Seurat", "SeuratObject", "harmony", "arrow"))
-install.packages("BiocManager")
-BiocManager::install(c("SpatialExperiment", "SummarizedExperiment", "clusterProfiler", "org.Hs.eg.db"))
-# spacexr is often installed from GitHub:
-# remotes::install_github("dmcable/spacexr")
+## Contact
 
+For questions about the analysis or to request the processed objects, please contact the corresponding author(s) Yi-Xuan Xiong at xyxuan@hunnu.edu.cn.

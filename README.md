@@ -58,4 +58,4 @@ The specific version can be found in the sessionInfo.txt file.
 
 ## Contact
 
-For questions about the analysis or to request the processed objects, please contact the corresponding author(s) Yi-Xuan Xiong at xyxuan@hunnu.edu.cn.
+For questions about the analysis or to request the processed objects, please contact Yi-Xuan Xiong at xyxuan@hunnu.edu.cn.
